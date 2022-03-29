@@ -19,7 +19,7 @@ class CartItem extends PureComponent {
         <div className="CartItemContainer">
           <div className="ItemPropertiesContainer">
             <h2 className={size}>{product.name}</h2>
-            {size !== 'Small' && <h3 className={size}>{product.brand}</h3>}
+            <h3 className={size}>{product.brand}</h3>
             <h4 className={size}>
               {filteredPrice.currency.symbol}
               {(filteredPrice.amount).toFixed(2)}
